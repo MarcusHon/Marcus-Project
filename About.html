@@ -1,45 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
+<html>
+<title>EP1000 website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheet.css">
 
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
+<body class="w3-light-grey w3-content" style="max-width:1600px;">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><b>About MEEE</b></title>
-    <link rel="stylesheet" href="stylesheet.css">
-    
-</head>
-<body>
-    <header>
-        <h1>My Project Site</h1>
-    </header>
-    <nav>
-        <p>Navigation: </p>
-        <ul>
-            <li><a href="index.html">Main</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-        </ul>
-    </nav>
-    <div>
-        <table class="center">
-            <thead>
-              <tr>
-                <td class="tg-0lax"><img src="image0.png" alt="My Selfie"  />
-                    <p>This is how I look Like ^_^</p></td>
-                <td class="tg-0pky">Name: Marcus Hon Xu En<br>Course: Diploma in Mechanical engineering<br>School: MAE<br>Year: 3<br>Email: marcusprojects123@gmail.com</td>
-              </tr>
-            </thead>
-            </table>
-    </div>
-    <div style="float:left; width:49%">
-        <img src="ahref.png" alt="" style="width:98%">
-    </div>
-    <div style="float:center; width:49%">
-        <P><b>INTEREST</b></P>
+<!-- Sidebar/menu -->
+
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="image0.png" style="width:60%;" class="w3-round"><br><br>
+    <h4><b>EP1000, DIGITAL FAB & PROTOTYPING FUNDAMENTALS</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <li><a href="index.html">Main</a></li>
+    <li><a href="About.html">About</a></li>
+    <!--<li><a href="Safety.html">Lab Safety</a></li>-->
+    <li><a href="Projects.html">Projects</a></li>      
+
+
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>About Me</b></h1>
+
+    <p>Hello there!, my name is Marcus and this is my Photo</p>
+    <img src="image0.png" alt="My Selfie"  />
     <P>I have many interest and hobbies here are some of the main ones:</P>
     <ul>
         <li>Archery</li>
@@ -51,58 +66,7 @@
     <p>I also enjoy watching Formula 1 since 2017 when I first watched the Singapore GP Live on the television</p>
     
     </div>
-    <div style="clear:both">
-        
     </div>
-    <footer>
-        <p>Copyright</p>
-    </footer>
+  </header>
+
 </body>
-</body>
-
-</html>
-
-
-
-
-<!--
-<body>
-    <h1>About Me</h1>
-        <P>Navigation:</P>
-<ul> 
-    <li><a href="index.html">main</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="">Project</a></li>
-</ul>
-    <table class="tg">
-    <thead>
-      <tr>
-        <td class="tg-0lax"><img src="image0.png" alt="My Selfie"  />
-            <p>How I look</p></td>
-        <td class="tg-0pky">Name: Marcus Hon Xu En<br>Course: Diploma in Mechanical engineering<br>School: MAE<br>Year: 3<br>Email: eeee20.19@ichat.sp.edu.sg</td>
-      </tr>
-    </thead>
-    </table>
-    <P><b>INTEREST</b></P>
-    <P>I am interested in many things hmmmmm yes very interested indeed do you not agree? My main hobbies are:</P>
-    <ul>
-        <li>gaem</li>
-        <li>arrow pew</li>
-        <li>pedal pedal wheels</li>
-        <li>Shooting my canon</li>
-    </ul>
-    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quas provident cupiditate quia corrupti numquam sunt? Veniam atque distinctio beatae labore temporibus fugit laudantium, optio inventore, aspernatur vel autem eius.</P>
-    
-</body>
--->
-
-  <!--
-    <div style="float:center; width:49%">
-        <table class="tg">
-            <thead>
-              <tr>
-                <td class="tg-0lax"><img src="image0.png" alt="My Selfie"  />
-                    <p>How I look</p></td>
-                <td class="tg-0pky">Name: Marcus Hon Xu En<br>Course: Diploma in Mechanical engineering<br>School: MAE<br>Year: 3<br>Email: eeee20.19@ichat.sp.edu.sg</td>
-              </tr>
--->
